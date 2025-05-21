@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Text Banners</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .horizontal-marquee {
+            background-color: yellow;
+            font-weight: bold;
+            height: 40px;
+            line-height: 40px;
+        }
+        .vertical-marquee {
+            background-color: lightblue;
+            font-weight: bold;
+            width: 200px;
+            height: 100px;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="horizontal-marquee">
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+            This is a horizontal scrolling text banner!
+        </marquee>
+    </div>
+
+    <div class="vertical-marquee">
+        <marquee behavior="scroll" direction="up" scrollamount="3">
+            This is a vertical scrolling text banner!
+        </marquee>
+    </div>
+
+</body>
+</html>
